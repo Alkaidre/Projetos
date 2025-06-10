@@ -1,0 +1,33 @@
+"""A brisa gélida da noite varre as ruas de **Silverwood**, carregando consigo o cheiro de incenso e uma promessa de aventura. 
+Sob o manto estrelado, sussurros de um mal antigo ecoam, chamando por heróis capazes de moldar o destino. 
+Qual será o seu caminho nesta jornada épica?
+
+---
+
+### Escolha seu Destino
+
+Enquanto a escuridão avança, a necessidade de coragem se torna premente. 
+Três caminhos se abrem diante de você, cada um com suas próprias provas e glórias.
+ Escolha sabiamente, pois sua decisão moldará o futuro de Silverwood e além.
+
+#### O Guerreiro: Força Inabalável
+
+Com o clangor do aço em seus ouvidos e a terra tremendo sob seus pés, 
+você empunha a força bruta como sua maior arma.
+Treinado nas artes da guerra e forjado em batalhas incontáveis, o **Guerreiro** é a muralha que protege os inocentes, 
+o escudo que se ergue contra a escuridão. Sua honra é seu guia, e sua coragem, inquebrável.
+
+#### O Ladrão: Sombra e Subterfúgio
+
+Nas vielas escuras e nos becos esquecidos, você se move como uma sombra, a lâmina afiada e os dedos ágeis.
+O **Ladrão** é mestre da furtividade, do engano e da astúcia, 
+capaz de desvendar segredos e desarmar armadilhas com uma graciosidade mortal.
+O perigo é seu playground, e a riqueza, sua recompensa.
+
+#### O Mago: Conhecimento e Poder
+
+O ar crepita com a energia primordial enquanto você invoca as forças elementais a seu comando. 
+O **Mago** é um estudioso das artes arcanas, um canal para o poder bruto do universo. Seus feitiços podem curar ou destruir,
+ proteger ou aprisionar. A sabedoria é sua fortaleza, e a magia, sua maior arma.
+
+"""

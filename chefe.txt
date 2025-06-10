@@ -1,0 +1,28 @@
+"""A Sombra Ascendente: História de Mor'Draal, o Necromante
+O ar em Eldoria costumava ser puro, carregando o perfume das flores e o riso de crianças. 
+Agora, ele cheira a terra revolvida e a um terror antigo que se agita sob a crosta do mundo. 
+Esse terror tem um nome, um sussurro que congela o sangue: Mor'Draal.
+
+Antes de se tornar a Sombra, Mor'Draal era apenas um erudito, um jovem fascinado pelos mistérios da vida e, mais perigosamente, da morte. 
+Ele se aprofundou em tomos proibidos, ignorando os avisos dos anciãos e as lendas sobre o que espreitava no vazio.
+ Sua busca por conhecimento se tornou uma obsessão insaciável, e a obsessão o levou a um caminho sem volta.
+
+Foi nas Criptas Sussurrantes, um lugar esquecido onde os ecos dos mortos se agarravam às paredes, que Mor'Draal fez seu pacto. 
+Não com um demônio de fogo ou uma entidade das profundezas, mas com a própria Névoa do Esquecimento,
+ uma força primordial que se alimenta da ausência e da desolação. 
+Em troca de seu domínio sobre a vida e a morte, Mor'Draal entregou sua alma,
+ sua humanidade e qualquer resquício de luz que um dia habitou seu coração.
+
+Ele ressurgiu, não mais o jovem erudito, mas um Necromante cujo toque trazia a putrefação e cuja voz comandava legiões de mortos-vivos.
+ Aldeias foram reduzidas a cascalho, seus habitantes transformados em títeres sem vontade. 
+ Florestas vibrantes murcharam em pântanos pútridos sob a influência de sua magia sombria.
+
+Mor'Draal não busca ouro ou poder mundano; ele anseia por silêncio e conformidade total.
+ Ele acredita que a existência, com seu caos e sofrimento, é uma abominação e que a verdadeira paz só pode ser encontrada na ausência de vida,
+  na quietude eterna dos mortos. 
+ Seu objetivo final é transformar Eldoria inteira em um reino de silêncio, 
+ onde apenas o farfalhar de ossos e o gemido do vento sobre tumbas recém-abertas quebrem a monotonia.
+
+A ascensão de Mor'Draal não é apenas uma ameaça à vida, mas à própria esperança. 
+Seus olhos, antes cheios de curiosidade, agora brilham com a frieza do vácuo, refletindo a escuridão que ele deseja impor a todos. 
+Você, herói, é um dos poucos focos de luz que restam para desafiar a sombra que se alastra."""
