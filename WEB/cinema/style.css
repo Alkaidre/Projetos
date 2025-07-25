@@ -1,0 +1,24 @@
+
+.green{
+    color: green;
+}
+
+.underline {
+    text-decoration: none;
+}
+
+.red{
+    color: darkred;
+}
+
+.blue{
+    color: darkblue;
+}
+
+.seagreen {
+    color: seagreen;
+}
+html{
+    font-family: Arial;
+    text-size-adjust: 20px;
+}

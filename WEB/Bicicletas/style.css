@@ -1,0 +1,44 @@
+.amarelo1{
+    color: #febe01;
+}
+
+.amarelo2{
+    color: #320;
+}
+
+.preto {
+    color: #111;
+}
+
+p {
+    color: #b2b2b2;
+}
+
+h1 {
+    font-family: arial;
+    text-align: center;
+}
+
+.item{
+    font-family: arial;
+    text-align: justify;
+    background-color: #111;
+    padding: 4px 0 30px 30px;
+    margin: 20px;
+    border-radius: 4px;
+}
+.branco{
+    color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-family: arial;
+    padding: 8px 8px 8px 8px;
+    background-color: #febe01;
+    text-align: center;
+    border-radius: 4px;
+    border-color: transparent;
+
+}
