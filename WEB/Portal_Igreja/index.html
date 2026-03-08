@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Culto</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1c6ea4;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 1rem;
+    }
+    section {
+      background-color: white;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    #piscar {
+      background-color: #ffeb3b;
+      padding: 0.5rem;
+      text-align: center;
+      font-weight: bold;
+      display: none;
+    }
+    #loginForm {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      margin: 20px auto;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Painel do Culto</h1>
+  </header>
+
+  <div id="piscar">⚠️ Novo conteúdo disponível!</div>
+
+  <main>
+    <section id="loginSection">
+      <h2>Login de Administrador</h2>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="senha" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+        <p id="mensagemErro" style="color:red"></p>
+      </form>
+    </section>
+
+    <section>
+      <h2>Avisos Gerais</h2>
+      <p id="avisos">Aguardando conteúdo...</p>
+    </section>
+    <section>
+      <h2>Aceitação de Novos Membros</h2>
+      <p id="membros">Aguardando conteúdo...</p>
+    </section>
+    <section>
+      <h2>Ações de Graça</h2>
+      <p id="gracas">Aguardando conteúdo...</p>
+    </section>
+    <section>
+      <h2>Pedidos de Oração</h2>
+      <p id="pedidos">Aguardando conteúdo...</p>
+    </section>
+    <section>
+      <h2>Aniversariantes da Semana</h2>
+      <ul id="aniversariantes">
+        <li>Nenhum aniversariante cadastrado ainda.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Cadastro de Visitantes</h2>
+      <form id="visitanteForm">
+        <input type="text" id="visitanteNome" placeholder="Nome" required>
+        <input type="text" id="visitanteTelefone" placeholder="Telefone" required>
+        <input type="text" id="visitanteConvidado" placeholder="Convidado por" required>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "SUA_API_KEY",
+      authDomain: "SEU_AUTH_DOMAIN",
+      projectId: "SEU_PROJECT_ID",
+      storageBucket: "SEU_BUCKET",
+      messagingSenderId: "SEU_SENDER_ID",
+      appId: "SEU_APP_ID"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    const auth = firebase.auth();
+
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
+
+      auth.signInWithEmailAndPassword(email, senha)
+        .then(() => {
+          document.getElementById("mensagemErro").innerText = "";
+          document.getElementById("loginSection").style.display = "none";
+          document.getElementById("piscar").style.display = "block";
+          carregarDados();
+        })
+        .catch(error => {
+          document.getElementById("mensagemErro").innerText = "Erro: " + error.message;
+        });
+    });
+
+    document.getElementById("visitanteForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const nome = document.getElementById("visitanteNome").value;
+      const telefone = document.getElementById("visitanteTelefone").value;
+      const convidado = document.getElementById("visitanteConvidado").value;
+
+      db.collection("visitantes").add({
+        nome: nome,
+        telefone: telefone,
+        convidado: convidado,
+        data: new Date()
+      }).then(() => {
+        alert("Visitante cadastrado com sucesso!");
+        document.getElementById("visitanteForm").reset();
+      });
+    });
+
+    function carregarDados() {
+      document.getElementById("avisos").innerText = "Culto especial no próximo domingo às 18h.";
+      document.getElementById("membros").innerText = "Recepção de 3 novos membros hoje.";
+      document.getElementById("gracas").innerText = "Agradecimentos pela campanha missionária bem-sucedida.";
+      document.getElementById("pedidos").innerText = "Oração pela saúde da irmã Maria e emprego do irmão José.";
+      document.getElementById("aniversariantes").innerHTML = `
+        <li>Irmã Ana (27/07)</li>
+        <li>Irmão João (30/07)</li>
+      `;
+    }
+  </script>
+</body>
+</html>

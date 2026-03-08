@@ -88,3 +88,62 @@ border: 4px solid rgb(34, 28, 165);
   padding: 10px;
   
 }
+grid-container1 {
+    display: grid;
+    grid-template-areas:
+        "resumo resumo resumo"
+        "experiencia experiencia1 experiencia2"
+        "experiencia3 experiencia4 experiencia5";
+    grid-gap: 10px;
+}
+.resumo {
+    grid-area: resumo;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.experiencia, .experiencia1, .experiencia2, .experiencia3, .experiencia4, .experiencia5 {
+    background-color: #d1ecf1;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.experiencia h2, .experiencia1 h2, .experiencia2 h2, .experiencia3 h2, .experiencia4 h2, .experiencia5 h2 {
+    color: rgb(21, 2, 91);
+    text-align: center;
+}
+
+.qualificacoes, .formacao, .certificados, .habilidades, .outrasQualificaçoes {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    color: rgb(21, 2, 91);
+    text-align: justify;
+    
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-areas:
+        "resumo resumo resumo"
+        "qualificacoes formacao formacao"
+        "certificados habilidades outrasQualificaçoes";
+    grid-gap: 10px;
+}
+
+.btn {
+    background-color: #f0f8ff;
+    border: none;
+    color: rgb(21, 2, 91);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
